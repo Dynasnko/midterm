@@ -97,7 +97,7 @@ namespace _midterm
             */
 
             /*0703 Concat()方法
-            int[] numbers = [1, 2, 3, 4, 5);//定義整數數組
+            int[] numbers = {1, 2, 3, 4, 5};//定義整數數組
             string result = string.Concat(numbers);//合併數組為字串
             Console.WriteLine(result);//輸出結果"12345"
             */
@@ -259,7 +259,14 @@ namespace _midterm
             Console.WriteLine(result);//輸出:Hello
             */
 
-            /*1501 舉例
+            /*1501 舉例1
+            string sentence = "Hello World";
+            string newSentence = sentence.Remove(5, 7);
+            //刪除從索引5開始7個字元
+            Console.WriteLine(newSentence);
+            */
+
+            /*1501 舉例2
             List<string> fruits = new List<string> { "Apple", "Banana", "Cherry" };
             bool result = fruits.Remove("Grape");   // 嘗試移除不存在的元素 "Grape"
             Console.WriteLine(result); // 輸出 "False"
@@ -299,20 +306,6 @@ namespace _midterm
             //Replace() 方法搜索所有出現的 "World”轉成“C#”。
             //因為 "World"只在字串中出現一次,所以只需要换一次
             Console.WriteLine(result);//輸出:HelloC#
-
-
-
-            //string source = "CSharpStringMethods";//宣告字串
-            //char[] destination = new char[7]; //宣告大小為7的陣列
-            //source.CopyTo(6, destination, 0, 7);
-            ////從字串source的索引6開始複製7個字元到陣列destination中，從該陣列的索引 0 開始放入
-            //Console.WriteLine(destination);
-
-
-            /*
-            string str = "---Hello---";//宣告字串
-            string result = str.Trim('-');//將字串前後的的指定字符移除
-            Console.WriteLine(result);
             */
 
             /* 1701 舉例
@@ -362,7 +355,7 @@ namespace _midterm
             int[] PlusArray = new int[array1.Length + array2.Length];
             //建立一個大小為1+2的整數陣列
             array1.CopyTo(PlusArray, 0); // 將 array1 的內容從索引 0 開始複製到 PlusArray
-            //目前 PlusArray內容為{ 1, 2, 3, 0, 0, 0 }
+            //目前 PlusArray內容為{ 1, 2, 3, 0, 0, 0}
             array2.CopyTo(PlusArray, array1.Length); // 將 array2 的內容從索引 3 開始複製到 PlusArray
             Console.WriteLine(string.Join(", ", PlusArray)); // 輸出: 1, 2, 3, 4, 5, 6
             */
