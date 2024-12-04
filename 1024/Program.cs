@@ -141,7 +141,7 @@ namespace _midterm
 
             /*1103 PadRight()方法
             string name = "shan";//宣告一個字串,值是"shan"
-            string result = name.PadRight(15);
+            string result = name.PadRight(15,'-');
             //PadRight是一個方法,可以將字串長度填充到指定的值,並且是從字串右邊開始填充
             //括弧中指定宣告的值是15,代表要將字串從右邊開始填充到15
             //因為括弧中沒有宣告第二個值,所以預設使用空白來填充
